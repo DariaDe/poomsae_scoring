@@ -1,0 +1,1 @@
+export 'package:poomsae_scoring/infrastructure/navigation/bindings/controllers/home.controller.binding.dart'; 
