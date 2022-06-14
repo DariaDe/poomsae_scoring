@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
+import 'package:poomsae_scoring/infrastructure/navigation/bindings/controllers/enter_court.controller.binding.dart';
+
 import '../../config.dart';
-import '../../presentation/screens.dart';
+import '../../presentation/enter_court/enter_court.screen.dart';
+import '../../presentation/home/home.screen.dart';
+import '../../presentation/judges/judges.screen.dart';
 import 'bindings/controllers/controllers_bindings.dart';
 import 'routes.dart';
 
@@ -30,6 +34,16 @@ class Nav {
       name: Routes.HOME,
       page: () => HomeScreen(),
       binding: HomeControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.ENTER_COURT,
+      page: () => EnterCourtScreen(),
+      binding: EnterCourtControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.JUDGES,
+      page: () => JudgesScreen(),
+      binding: JudgesControllerBinding(),
     ),
   ];
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:poomsae_scoring/infrastructure/constants/colors.dart';
 
 import 'infrastructure/navigation/navigation.dart';
 import 'infrastructure/navigation/routes.dart';
@@ -19,6 +20,11 @@ class Main extends StatelessWidget {
     return GetMaterialApp(
       initialRoute: initialRoute,
       getPages: Nav.routes,
+      theme: ThemeData(
+        textSelectionTheme: TextSelectionThemeData(
+          cursorColor: colorBlack, //thereby
+        ),
+      ),
     );
   }
 }
