@@ -40,6 +40,31 @@
   <script src="flutter.js" defer></script>
 </head>
 <body>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDwque0iDr6N4c-TKQcF12qZEfoiloJBQs",
+    authDomain: "poomsae-scoring-5c980.firebaseapp.com",
+    projectId: "poomsae-scoring-5c980",
+    storageBucket: "poomsae-scoring-5c980.appspot.com",
+    messagingSenderId: "909999655252",
+    appId: "1:909999655252:web:25a54d79e8052516ba60c1"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
@@ -54,5 +79,6 @@
       });
     });
   </script>
+
 </body>
 </html>
