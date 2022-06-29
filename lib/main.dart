@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:poomsae_scoring/infrastructure/constants/colors.dart';
 
+import 'di/injector_provider.dart';
 import 'firebase_options.dart';
 import 'infrastructure/navigation/navigation.dart';
 import 'infrastructure/navigation/routes.dart';
@@ -14,6 +15,7 @@ Future main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   var initialRoute = await Routes.initialRoute;
+  await setupInjection();
   runApp(Main(initialRoute));
 }
 

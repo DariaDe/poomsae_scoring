@@ -1,5 +1,5 @@
 class JudgeModel {
-  int id;
+  String id;
   String firstName;
   String lastName;
   String thirdName;
