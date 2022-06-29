@@ -13,6 +13,7 @@ dependencies:
   flutter_neumorphic: ^3.0.3
   cloud_firestore: ^3.1.18
   firebase_core: ^1.18.0
+  get_it: ^7.2.0
 
 dev_dependencies: 
   flutter_lints: ^2.0.0
@@ -25,7 +26,7 @@ flutter:
 
   assets:
     - assets/images/
-    -
+
   fonts:
     - family: Montserrat
       fonts:

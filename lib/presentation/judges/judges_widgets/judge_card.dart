@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
-import 'package:poomsae_scoring/infrastructure/data/models/judge_model.dart';
+import 'package:poomsae_scoring/infrastructure/data/models/judge/judge_model.dart';
 
 import '../../../infrastructure/constants/colors.dart';
 import '../../../infrastructure/constants/texts.dart';
@@ -24,8 +24,9 @@ class JudgeCard extends StatelessWidget {
             padding: const EdgeInsets.only(top: 25.0, bottom: 10),
             child: CircleAvatar(
               backgroundColor: colorLightGreyBackground,
-              //todo change on Image.network when back comes
-              child: Image.asset(judge.avatarUrl),
+              backgroundImage: judge.avatarUrl.isNotEmpty
+                  ? NetworkImage(judge.avatarUrl)
+                  : AssetImage('assets/images/man.png') as ImageProvider,
               maxRadius: 65,
             ),
           ),
